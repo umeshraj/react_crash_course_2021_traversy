@@ -1,12 +1,10 @@
 import Task from "./Task";
 
-const Tasks = ({ tasks }) => {
-  console.log(tasks);
-
+const Tasks = ({ tasks, onDelete }) => {
   return (
     <>
       {tasks.map((task) => {
-        return <Task key={task.id} task={task}></Task>;
+        return <Task key={task.id} task={task} onDelete={onDelete}></Task>;
       })}
     </>
   );
