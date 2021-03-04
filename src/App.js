@@ -1,15 +1,18 @@
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, text: "Doc work", day: "Feb 5th at 1:20pm", reminder: false },
-    { id: 2, text: "School work", day: "Apr 1th at 4:20pm", reminder: true },
-    { id: 3, text: "Food shopping", day: "Jan 1th at 3:10pm", reminder: true },
-  ]);
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    effect;
+    return () => {
+      cleanup;
+    };
+  }, [input]);
 
   // Add task
   const addTask = (task) => {
