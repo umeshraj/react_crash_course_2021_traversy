@@ -8,11 +8,13 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    effect;
-    return () => {
-      cleanup;
+    const fetchTasks = async () => {
+      const res = await fetch("http://localhost:5000/tasks");
+      const data = await res.json();
+      console.log(data);
     };
-  }, [input]);
+    fetchTasks();
+  }, []);
 
   // Add task
   const addTask = (task) => {
