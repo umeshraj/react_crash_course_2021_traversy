@@ -16,7 +16,7 @@
       "id": 3,
       "text": "Food shopping",
       "day": "Jan 1th at 3:10pm",
-      "reminder": true
+      "reminder": false
     },
     {
       "text": "New task ",
